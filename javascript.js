@@ -88,6 +88,11 @@ number.unshift(11);
 var number = [45, 66, 33, 47, 46, 90,]
 number.shift(11);
 
+// array ar jototoku icca kete felar jonno :----------------
+var number = [45, 66, 33, 47, 46, 90,]
+// array ar 2 to 5 porjonto element remove hove-------
+number.slice(2,5);
+
 
 
 // Conditinoal array system:---------------------------
