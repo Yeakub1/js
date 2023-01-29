@@ -80,6 +80,13 @@ number.push(45);
 number.pop();
 console.log(number);
 
+// array ar frist a element add korar jonno:-----------
+var number = [45, 66, 33, 47, 46, 90,]
+number.unshift(11);
+
+// array ar frist a element remove korar jonno:-----------
+var number = [45, 66, 33, 47, 46, 90,]
+number.shift(11);
 
 
 
