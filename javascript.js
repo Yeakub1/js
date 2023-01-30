@@ -224,3 +224,67 @@ while (num > 1) {
 for (var i = 10; i > 0; i--) {
     console.log(i);   
 }
+
+
+// ============================= core consept ================================
+
+function startFan() {
+    console.log("Stand Up");
+    console.log("Going to fan switch");
+    console.log("Click This fan switch");
+    console.log("Back to your set hear");
+}
+startFan();
+
+
+
+// funcation add policy:----------------------------------------------
+
+function add(number1, number2) {
+    console.log(number1, number2);
+    var sum = number1 + number2;
+    console.log(sum);
+}
+add(45,15);
+
+
+
+
+// funcation return policy:------------------------
+
+function bingSingara(money) {
+    var singaraPrice = 10;
+    var quentity = money / singaraPrice;
+    return quentity;
+}
+var myTk = 200;
+var singaras = bingSingara(myTk);
+console.log("Eiting singaras:", singaras);
+
+
+// funcation return gor policy:------------------------
+
+function grtAvarage(assigment1, assigment2, assigment3) {
+    const total = assigment1 + assigment2 + assigment3;
+    const avarage = total / 3;
+    return avarage;
+}
+
+const assigment1 = 60;
+const assigment2 = 59;
+const assigment3 = 60;
+
+const averageMark = grtAvarage(assigment1, assigment2, assigment3);
+console.log(averageMark, "my assigment mark");
+
+
+// ak ta objact a onak gula valu lika jai jemon :----------------------
+
+const mycomputer = {
+    band : "asus",
+    color : "sliver",
+    model : "i5",
+    ram : "12gb",
+    display : 15
+}
+console.log(mycomputer);
