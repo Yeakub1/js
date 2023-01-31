@@ -130,6 +130,15 @@ else{
 
 
 // ============================= loop ================================
+
+// Simple while loop:--------------------------
+var number = 0;
+while (number <= 6) {
+    console.log(number);
+    number++;
+}
+
+
 // while loop:------------------
 var Rostgiven = 1;
 while (Rostgiven <= 7) {
@@ -146,7 +155,7 @@ while (Rostgiven <= 7) {
 // Simple virsion of for loop :---------------
 for (var i = 0; i <= 7; i++){
     console.log(i);
-    console.log("ki moja ki moja");
+    console.log("Thsi is print is a i element");
 }
 
 
@@ -156,12 +165,14 @@ var numbers = [24, 55, 64, 34, 67, 84, 45, 14];
 for(var i = 0; i <= 7; i++){
     number = numbers[i];
     console.log(number);
+    // i<=7 ay jonno i 7 ta element print korbe, i ar man joto hobe i toto gula man print korbe.
 }
 
 var numbers = [67,93,48,49,54,74,92,50,86,90,65,23,12];
 for (var i = 0; i < numbers.length; i++){
     number = numbers[i];
     console.log(number);
+    // i sob gula man print korbe, ay khan i ar man niddesto kore bola nay tay.
 }
 
 // String type for loop:---------
@@ -287,4 +298,102 @@ const mycomputer = {
     ram : "12gb",
     display : 15
 }
-console.log(mycomputer);
+console.log(mycomputer.display);
+
+
+
+
+
+
+// ===================================  today is a revision day  =============================================
+
+
+// inch to fit convart:-----------
+
+const inch = 12;
+const datainch = 144;
+const dadafit = datainch / inch;
+console.log(dadafit);
+
+// inch to feet funcation a kora:-----------------------
+
+function inchToFeet(inches) {
+    const feet = inches / 12;
+    return feet;
+}
+const dadainch = 144;
+const dadafeet = inchToFeet(dadainch);
+console.log(dadafeet);
+
+// funcation ar condition ar lila khela:-----------------------------------
+
+function isMoonUP(time, date) {
+    const moon = time;
+    const moondate = date;
+    if (time <= 7) {
+        console.log("Cholo aj tumi r ami chad deki");
+    }
+    else if ( date <= 30) {
+        console.log("ay month a chad deka onakk moja ");
+    }
+    else{
+        console.log("tor sate ami kono din chad dekbo na");
+    }
+    return moon, moondate;
+}
+const day = 8;
+const date = 30;
+const chad = isMoonUP(day,date);
+console.log(chad);
+
+
+// odd and even number ber korar upay:------------------------------------------------
+
+function isoddEven(number) {
+    const num = number % 2;
+    if (num === 0) {
+        console.log("Number is a odd Numbers");
+        // return true;
+    }
+    else{
+        console.log("Number is a even Numbers");
+        // return false;
+    }
+    return num;
+}
+const inputnum = 449;
+const finalresult = isoddEven(inputnum);
+console.log(finalresult);
+
+
+
+// Number and index ak sate ber korar jonno :---------------------------------------
+
+function getSunOfArray(numbers) {
+    for (let i = 0; i < numbers.length; i++) {
+         const index = i ;
+        const element = numbers[index];
+        console.log(index, element);
+        
+    }
+}
+const myNumber = [23, 44, 55, 35, 66, 77, 87,12];
+getSunOfArray(myNumber);
+
+
+
+
+// index, array and sum akjust kora:---------------------------------
+
+function getElenemtSum(numbers) {
+    sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        const index = i;     
+        const element = numbers[index];
+        sum = sum + element;
+        console.log(index, element, sum);
+    }
+    return sum;
+}
+const myNumbers = [45, 56, 33, 56, 36, 66, 64, 33, 67, 22, 23];
+getElenemtSum(myNumbers);
