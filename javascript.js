@@ -53,6 +53,37 @@ vagfol = num1 % num2;
 console.log(vagfol);
 
 
+// 1 too 100 porjonto number sum korar :-------------------
+
+let sum = 0;
+for (let i = 0; i <= 100; i++) {
+    sum = sum + i;
+    console.log(i, sum);
+    
+}
+
+// 1 too 10 porjonto number gun korar number-----------------------
+
+function factriol(number) {
+    let result = 1;
+    for (let i = 1; i <= number; i++) {
+        result = result * i;  
+    }
+    return result;
+}
+const result = factriol(9);
+console.log(result);
+
+
+// factriol revirse korar:------------------------
+
+function factriol(number) {
+    for (let i = number; i >= 1; i--) {
+        console.log(i);       
+    }
+}
+factriol(10);
+
 
 // ============================  Array  =================================
 
@@ -394,6 +425,24 @@ function getElenemtSum(numbers) {
         console.log(index, element, sum);
     }
     return sum;
+}
+const myNumbers = [45, 56, 33, 56, 36, 66, 64, 33, 67, 22, 23];
+getElenemtSum(myNumbers);
+
+
+
+
+
+// funcation dia odd and even number ber korar upai:-------------------------------------
+
+function getElenemtSum(numbers) {
+    for (let i = 0; i < numbers.length; i++) {
+        const index = i;     
+        const element = numbers[index];
+        if (element % 2 === 0) {
+            console.log(index, element); 
+        }       
+    }
 }
 const myNumbers = [45, 56, 33, 56, 36, 66, 64, 33, 67, 22, 23];
 getElenemtSum(myNumbers);
