@@ -446,3 +446,38 @@ function getElenemtSum(numbers) {
 }
 const myNumbers = [45, 56, 33, 56, 36, 66, 64, 33, 67, 22, 23];
 getElenemtSum(myNumbers);
+
+
+
+
+
+// ===================================  string modiul no 22  =============================================
+
+// case sensetine, lergest string to small sting a convart:-------------------------
+
+const userName = "yeakub";
+const userinput = "Yeakub";
+
+if (userName.toLowerCase() === userinput.toLowerCase()) {
+    console.log("valid user");
+}
+else{
+    console.log("invalid user");
+}
+
+
+
+// onak gula element teke ak ta element kuje ber korar upai:------------
+
+const lyrics = 'Tumi Bondu Kala Paki Ami Jeno Ki, Bosonto kal a tomai bolte pari ni';
+
+const search = 'tumi';
+const lyricslow = lyrics.toLowerCase();
+const  searchlow = search.toLowerCase();
+const includ = lyricslow.includes(searchlow);
+console.log(includ);
+
+// one line korar jonno short from:----------
+const darkExjusest = lyrics.toLowerCase().includes(search.toLowerCase());
+console.log(darkExjusest);
+
